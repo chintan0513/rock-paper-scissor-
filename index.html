@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon-32x32.png">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <script src="connect.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>
+                <span>Rock</span>
+                <span>Paper</span>
+                <span>Scissors</span>
+            </h1>
+            <div class="score-container">
+                <h4>Score</h4>
+                <p id="score">0</p>
+            </div>
+        </header>
+
+        <main id="main">
+            <button class="btn-circle btn-paper pick" data-choice="paper">
+                <span class="wrapper">
+                    <img src="assets/icon-paper.svg" alt="paper icon">
+                </span>
+            </button>
+            <button class="btn-circle btn-scissors pick" data-choice="scissors">
+                <span class="wrapper">
+                    <img src="assets/icon-scissors.svg" alt="scissors icon">
+                </span>
+            </button>
+            <button class="btn-circle btn-rock pick" data-choice="rock">
+                <span class="wrapper">
+                    <img src="assets/icon-rock.svg" alt="rock icon">
+                </span>
+            </button>
+        </main>
+
+    <button class="btn-rules">Rules</button>
+    </div>
+    <div class="selection" id="selection">
+        <div>
+            <h2>You Picked </h2>
+            <button class="btn-circle btn-paper">
+                <span class="wrapper">
+                    <img src="assets/icon-paper.svg" alt="paper icon">
+                </span>
+            </button>
+        </div>
+        <div>
+            <p class="big-text">You <span id="win">WON</span></p>
+            <button id="reset" class="btn">Play Again</button>
+        </div>
+        <div>
+            <h2>The house Picked </h2>
+            <button class="btn-circle btn-rock">
+                <span class="wrapper">
+                    <img src="assets/icon-rock.svg" alt="rock icon">
+                </span>
+            </button>
+        </div>
+        
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
+
+</body>
+</html>
